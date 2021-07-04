@@ -15460,7 +15460,7 @@ var states={
     {
       "type": "Feature",
       "properties": {
-        "name": "Trengganu",
+        "name": "Terengganu",
         "density": 0
       },
       "geometry": {
