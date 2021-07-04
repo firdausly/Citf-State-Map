@@ -95,66 +95,66 @@ Papa.parse("https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vac
          switch (data[1]) {
              case "Perak":
                  states.features[0].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Pulau Pinang":
                  states.features[1].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Kedah":
                  states.features[2].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Perlis":
                  states.features[3].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Johor":
                  states.features[4].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Kelantan":
                  states.features[5].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Melaka":
                  states.features[6].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Negeri Sembilan":
                  states.features[7].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Pahang":
                  states.features[8].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
              case "Selangor":
                  states.features[9].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Terengganu":
                  states.features[10].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Sabah":
                  states.features[11].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "Sarawak":
                  states.features[12].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "W.P. Kuala Lumpur":
                  states.features[13].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "W.P. Putrajaya":
                  states.features[14].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
              case "W.P. Labuan":
                  states.features[15].properties.density = data[7];
-                 console.log(data[7] + " " + data[1]);
+                 
                  break;
 
          }
@@ -236,7 +236,7 @@ function resetHighlight(e) {
 function onEachFeature(feature, layer) {
     var x=layer.feature.properties.density;
     var y=layer.feature.properties.name;
-    layer.bindPopup('<b>'+y+'</b> <br>'+x+' Kes');
+    layer.bindPopup('<b>'+y+'</b> <br>'+x+' Dos');
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
