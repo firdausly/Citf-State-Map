@@ -1,312 +1,327 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
 
-<!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-   crossorigin=""></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
 
-<style>
-    html, body, #container /*, and all other map parent selectors*/ {
-  height: 100%;
-  width: 100%;
-}
-#mapid {
-  width: auto;
-  height: 100%;
-}
+    <style>
+        html,
+        body,
+        #container
 
-body {
-    background-color: #2d132c;
-}
-#navbar-iframe {
-height: 0px;
-visibility: hidden;
-display: none;
-}
- 
+        /*, and all other map parent selectors*/
+            {
+            height: 100%;
+            width: 100%;
+        }
 
- .info {
-    padding: 6px 8px;
-    line-height: 18px;
-    font: 14px/16px Arial, Helvetica, sans-serif;
-    background: white;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
-}
-.info h4 {
-    
-    margin: 0 0 5px;
-    color: #777;
-}
+        #mapid {
+            width: auto;
+            height: 100%;
+        }
 
-.legend {
-    line-height: 20px;
-    color: #555;
-    
-}
-.legend i {
-    
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.7;
-}
-</style>
+        body {
+            background-color: #2d132c;
+        }
+
+        #navbar-iframe {
+            height: 0px;
+            visibility: hidden;
+            display: none;
+        }
+
+
+        .info {
+            padding: 6px 8px;
+            line-height: 18px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .info h4 {
+
+            margin: 0 0 5px;
+            color: #777;
+        }
+
+        .legend {
+            line-height: 20px;
+            color: #555;
+
+        }
+
+        .legend i {
+
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 
 <body>
-    
-          
-            <div id="mapid" class=""></div>
-           
 
-       
-        
 
-</div>
-<script src="states.js" type="text/javascript"></script>
-<script src="papaparse.min.js"></script>
-<script>
-    var geojson;
-    var d =new Date();
-    d=d.toISOString().substring(0,10);
+    <div id="mapid" class=""></div>
 
-    var citf;
-    Papa.parse("https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_state.csv", {
-        download: true,
-        complete: function (results) {
-            citf = results.data;
-            citfLength = citf.length;
-            d=citf[citfLength-2][0];
-            for (var i = citfLength - 17; i < citfLength; i++) {
-                
-                switch (citf[i][1]) {
-                case "Perak":
-                    states.features[0].properties.density = citf[i][7];
 
-                    break;
-                case "Pulau Pinang":
-                    states.features[1].properties.density = citf[i][7];
 
-                    break;
-                case "Kedah":
-                    states.features[2].properties.density = citf[i][7];
 
-                    break;
-                case "Perlis":
-                    states.features[3].properties.density = citf[i][7];
 
-                    break;
-                case "Johor":
-                    states.features[4].properties.density = citf[i][7];
+    </div>
+    <script src="states.js" type="text/javascript"></script>
+    <script src="papaparse.min.js"></script>
+    <script>
+        var geojson;
+        var totalDos = 0;
+        var d = new Date();
+        d = d.toISOString().substring(0, 10);
 
-                    break;
-                case "Kelantan":
-                    states.features[5].properties.density = citf[i][7];
+        var mymap = L.map('mapid').setView([4.545960, 108.124008], 6);
+        var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(mymap);
 
-                    break;
-                case "Melaka":
-                    states.features[6].properties.density = citf[i][7];
+        var citf;
+        Papa.parse("https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_state.csv", {
+            download: true,
+            complete: function (results) {
+                citf = results.data;
+                citfLength = citf.length;
+                d = citf[citfLength - 2][0];
+                for (var i = citfLength - 17; i < citfLength; i++) {
 
-                    break;
-                case "Negeri Sembilan":
-                    states.features[7].properties.density = citf[i][7];
+                    switch (citf[i][1]) {
+                        case "Perak":
+                            states.features[0].properties.density = citf[i][7];
 
-                    break;
-                case "Pahang":
-                    states.features[8].properties.density = citf[i][7];
+                            break;
+                        case "Pulau Pinang":
+                            states.features[1].properties.density = citf[i][7];
 
-                case "Selangor":
-                    states.features[9].properties.density = citf[i][7];
+                            break;
+                        case "Kedah":
+                            states.features[2].properties.density = citf[i][7];
 
-                    break;
-                case "Terengganu":
-                    states.features[10].properties.density = citf[i][7];
+                            break;
+                        case "Perlis":
+                            states.features[3].properties.density = citf[i][7];
 
-                    break;
-                case "Sabah":
-                    states.features[11].properties.density = citf[i][7];
+                            break;
+                        case "Johor":
+                            states.features[4].properties.density = citf[i][7];
 
-                    break;
-                case "Sarawak":
-                    states.features[12].properties.density = citf[i][7];
+                            break;
+                        case "Kelantan":
+                            states.features[5].properties.density = citf[i][7];
 
-                    break;
-                case "W.P. Kuala Lumpur":
-                    states.features[13].properties.density = citf[i][7];
+                            break;
+                        case "Melaka":
+                            states.features[6].properties.density = citf[i][7];
 
-                    break;
-                case "W.P. Putrajaya":
-                    states.features[14].properties.density = citf[i][7];
+                            break;
+                        case "Negeri Sembilan":
+                            states.features[7].properties.density = citf[i][7];
 
-                    break;
-                case "W.P. Labuan":
-                    states.features[15].properties.density = citf[i][7];
+                            break;
+                        case "Pahang":
+                            states.features[8].properties.density = citf[i][7];
 
-                    break;
+                        case "Selangor":
+                            states.features[9].properties.density = citf[i][7];
+
+                            break;
+                        case "Terengganu":
+                            states.features[10].properties.density = citf[i][7];
+
+                            break;
+                        case "Sabah":
+                            states.features[11].properties.density = citf[i][7];
+
+                            break;
+                        case "Sarawak":
+                            states.features[12].properties.density = citf[i][7];
+
+                            break;
+                        case "W.P. Kuala Lumpur":
+                            states.features[13].properties.density = citf[i][7];
+
+                            break;
+                        case "W.P. Putrajaya":
+                            states.features[14].properties.density = citf[i][7];
+
+                            break;
+                        case "W.P. Labuan":
+                            states.features[15].properties.density = citf[i][7];
+
+                            break;
+
+                    }
+
+                }
+
+
+
+
+
+
+                for (var i = 0; i <= 15; i++) {
+                    var dos = parseInt(states.features[i].properties.density);
+                    totalDos += dos;
+                }
+
+
+
+                geojson = L.geoJson(states, {
+                    style: style,
+                    onEachFeature: onEachFeature
+                }).addTo(mymap);
+
+
+
+
+
+                function getColor(d) {
+                    return d > 1000000 ? '#800026' :
+                        d > 500000 ? '#BD0026' :
+                            d > 200000 ? '#E31A1C' :
+                                d > 100000 ? '#FC4E2A' :
+                                    d > 50000 ? '#FD8D3C' :
+                                        d > 20000 ? '#FEB24C' :
+                                            d > 10000 ? '#FED976' :
+                                                '#FFEDA0';
+                }
+                function style(feature) {
+                    return {
+                        fillColor: getColor(feature.properties.density),
+                        weight: 2,
+                        opacity: 1,
+                        color: 'white',
+                        dashArray: '3',
+                        fillOpacity: 0.7
+                    };
+                }
+
+                function highlightFeature(e) {
+                    var layer = e.target;
+
+                    layer.setStyle({
+                        weight: 5,
+                        color: '#666',
+                        dashArray: '',
+                        fillOpacity: 0.7
+                    });
+
+                    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                        layer.bringToFront();
+                    }
+                    info.update(layer.feature.properties);
+
+
+                }
+
+                function resetHighlight(e) {
+                    geojson.resetStyle(e.target);
+                    info.update();
+                }
+
+
+                function onEachFeature(feature, layer) {
+                    var x = layer.feature.properties.density;
+                    var y = layer.feature.properties.name;
+                    layer.bindPopup('<b>' + y + '</b> <br>' + x + ' Dos');
+                    layer.on({
+                        mouseover: highlightFeature,
+                        mouseout: resetHighlight,
+
+                    });
+                }
+
+
+                var info = L.control();
+
+                info.onAdd = function (mymap) {
+                    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+                    this.update();
+                    return this._div;
+                };
+
+
+                // method that we will use to update the control based on feature properties passed
+                info.update = function (props) {
+                    this._div.innerHTML = '<h4>Kumulatif Vaksinasi Harian Setakat ' + d + '</h4>' + (props ?
+                        '<b>' + props.name + '</b><br />' + props.density + ' Dos<br>'
+                        : '') + '<b>Jumlah Dos: ' + totalDos;
+                };
+
+
+
+
+                var legend = L.control({ position: 'bottomright' });
+
+                legend.onAdd = function (map) {
+
+                    var div = L.DomUtil.create('div', 'info legend'),
+                        grades = [0, 10000, 20000, 50000, 100000, 200000, 500000, 1000000],
+                        labels = [];
+
+                    // loop through our density intervals and generate a label with a colored square for each interval
+                    for (var i = 0; i < grades.length; i++) {
+                        div.innerHTML +=
+                            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                            (grades[i + 1] ? '< ' + grades[i + 1] + '<br>' : '1000000+');
+                    }
+
+                    return div;
+                };
+
+
+
+
+                info.addTo(mymap);
+                legend.addTo(mymap);
+
+
+
+
+
+
+
 
             }
+        });
 
-            }
-
-
-
-          
-
-
-            for (var i = 0; i <= 15; i++) {
-                var dos = parseInt(states.features[i].properties.density);
-                totalDos += dos;
-            }
+    </script>
 
 
 
-            geojson = L.geoJson(states, {
-                style: style,
-                onEachFeature: onEachFeature
-            }).addTo(mymap);
+</body>
 
-
-
-
-        }
-    });
-
-    </script>    
-
- <script>
-     var mymap = L.map('mapid').setView([4.545960, 108.124008], 6);
-     var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-	subdomains: 'abcd',
-	maxZoom: 19
-}).addTo(mymap);
-
-
-function getColor(d) {
-    return d > 1000000 ? '#800026' :
-           d > 500000  ? '#BD0026' :
-           d > 200000  ? '#E31A1C' :
-           d > 100000  ? '#FC4E2A' :
-           d > 50000   ? '#FD8D3C' :
-           d > 20000   ? '#FEB24C' :
-           d > 10000   ? '#FED976' :
-                      '#FFEDA0';
-}
-function style(feature) {
-    return {
-        fillColor: getColor(feature.properties.density),
-        weight: 2,
-        opacity: 1,
-        color: 'white',
-        dashArray: '3',
-        fillOpacity: 0.7
-    };
-}
-
-function highlightFeature(e) {
-    var layer = e.target;
-
-    layer.setStyle({
-        weight: 5,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0.7
-    });
-
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-    info.update(layer.feature.properties);
-
-
-}
-
-function resetHighlight(e) {
-    geojson.resetStyle(e.target);
-    info.update();
-}
-
-
-function onEachFeature(feature, layer) {
-    var x=layer.feature.properties.density;
-    var y=layer.feature.properties.name;
-    layer.bindPopup('<b>'+y+'</b> <br>'+x+' Dos');
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight,
-        
-    });
-}
-
-
-var info = L.control();
-
-info.onAdd = function (mymap) {
-    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    this.update();
-    return this._div;
-};
-
-var totalDos=0;
-// method that we will use to update the control based on feature properties passed
-info.update = function (props) {
-    this._div.innerHTML = '<h4>Kumulatif Vaksinasi Harian Setakat '+d +'</h4>'+  (props ?
-        '<b>' + props.name + '</b><br />' + props.density + ' Dos<br>'
-        : '')+'<b>Jumlah Dos: '+totalDos;
-};
-
-
-
-
-var legend = L.control({position: 'bottomright'});
-
-legend.onAdd = function (map) {
-
-    var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 10000, 20000, 50000, 100000, 200000, 500000, 1000000],
-        labels = [];
-
-    // loop through our density intervals and generate a label with a colored square for each interval
-    for (var i = 0; i < grades.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            (grades[i + 1] ? '< '+grades[i+1]+ '<br>' : '1000000+');
-    }
-
-    return div;
-};
-
-
-        
-
-        info.addTo(mymap);
-        legend.addTo(mymap);
-    
-
-
-
-   
-
-
-
-    
-    
- </script>
-
- </body>
-
- </html>
+</html>
