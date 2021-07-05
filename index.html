@@ -83,7 +83,7 @@ display: none;
     var geojson;
     var d =new Date();
     d=d.toISOString().substring(0,10);
-    
+
     var citf;
     Papa.parse("https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_state.csv", {
         download: true,
@@ -198,12 +198,12 @@ display: none;
 
 function getColor(d) {
     return d > 1000000 ? '#800026' :
-           d > 5000000  ? '#BD0026' :
-           d > 2000000  ? '#E31A1C' :
-           d > 1000000  ? '#FC4E2A' :
-           d > 500000   ? '#FD8D3C' :
-           d > 200000   ? '#FEB24C' :
-           d > 100000   ? '#FED976' :
+           d > 500000  ? '#BD0026' :
+           d > 200000  ? '#E31A1C' :
+           d > 100000  ? '#FC4E2A' :
+           d > 50000   ? '#FD8D3C' :
+           d > 20000   ? '#FEB24C' :
+           d > 10000   ? '#FED976' :
                       '#FFEDA0';
 }
 function style(feature) {
@@ -277,14 +277,14 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 100000, 200000, 500000, 1000000, 200000, 5000000, 10000000],
+        grades = [0, 10000, 20000, 50000, 100000, 200000, 500000, 1000000],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
             '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            (grades[i + 1] ? '< '+grades[i+1]+ '<br>' : '1000+');
+            (grades[i + 1] ? '< '+grades[i+1]+ '<br>' : '1000000+');
     }
 
     return div;
