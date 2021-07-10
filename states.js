@@ -7,7 +7,10 @@ var states = {
         "name": "Perak",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -3107,7 +3110,10 @@ var states = {
         "name": "Pulau Pinang",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3461,7 +3467,10 @@ var states = {
         "name": "Kedah",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -4349,7 +4358,10 @@ var states = {
         "name": "Perlis",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4867,7 +4879,10 @@ var states = {
         "name": "Johor",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6257,7 +6272,10 @@ var states = {
         "name": "Kelantan",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -8705,7 +8723,10 @@ var states = {
         "name": "Melaka",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -9089,7 +9110,10 @@ var states = {
         "name": "Negeri Sembilan",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -10001,7 +10025,10 @@ var states = {
         "name": "Pahang",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -13321,7 +13348,10 @@ var states = {
         "name": "Selangor",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15483,7 +15513,10 @@ var states = {
         "name": "Terengganu",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -17083,7 +17116,10 @@ var states = {
         "name": "Sabah",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20797,7 +20833,10 @@ var states = {
         "name": "Sarawak",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24343,7 +24382,10 @@ var states = {
         "name": "Kuala Lumpur",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -24703,7 +24745,10 @@ var states = {
         "name": "Putrajaya",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -24843,7 +24888,10 @@ var states = {
         "name": "Labuan",
         "density": 0,
         "firstdose": 0,
-        "seconddose": 0
+        "seconddose": 0,
+        "dailyfirstdose": 0,
+        "dailyseconddose": 0,
+        "dailydose": 0
       },
       "geometry": {
         "type": "Polygon",
