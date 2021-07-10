@@ -1,11 +1,13 @@
-var states={
+var states = {
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
       "properties": {
         "name": "Perak",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -3103,7 +3105,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Pulau Pinang",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3455,7 +3459,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Kedah",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -4341,7 +4347,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Perlis",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4857,7 +4865,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Johor",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6245,7 +6255,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Kelantan",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -8691,7 +8703,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Melaka",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -9073,7 +9087,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Negeri Sembilan",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -9983,7 +9999,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Pahang",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -13301,7 +13319,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Selangor",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15461,7 +15481,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Terengganu",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -17059,7 +17081,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Sabah",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20771,7 +20795,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Sarawak",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24315,7 +24341,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Kuala Lumpur",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -24673,7 +24701,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Putrajaya",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -24811,7 +24841,9 @@ var states={
       "type": "Feature",
       "properties": {
         "name": "Labuan",
-        "density": 0
+        "density": 0,
+        "firstdose": 0,
+        "seconddose": 0
       },
       "geometry": {
         "type": "Polygon",
@@ -24884,4 +24916,3 @@ var states={
   ]
 };
 
-  
